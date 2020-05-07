@@ -12,13 +12,25 @@ const Container = styled.nav`
   }
 `;
 
+const Emoji = styled.span`
+  font-size: 60px;
+  vertical-align: middle;
+  line-height: 2;
+`;
+
 const NavBar = () => {
   const { books } = useContext(BookContext);
 
   return (
     <Container>
       <h1>Reading list</h1>
-      <p>You have {books.length} books</p>
+      {books.length > 0 ? (
+        <p>You have {books.length} books</p>
+      ) : (
+        <Emoji role="img" aria-label="sheep">
+          😕
+        </Emoji>
+      )}
     </Container>
   );
 };

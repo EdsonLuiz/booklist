@@ -3,6 +3,7 @@ import BookContextProvider from "contexts/BookContext";
 import NavBar from "./NavBar";
 import styled from "styled-components";
 import BookList from "./BookList";
+import BookForm from "./BookForm";
 
 const Container = styled.div`
   background-color: #4c2a4c;
@@ -18,6 +19,7 @@ function App() {
       <BookContextProvider>
         <NavBar />
         <BookList />
+        <BookForm />
       </BookContextProvider>
     </Container>
   );
