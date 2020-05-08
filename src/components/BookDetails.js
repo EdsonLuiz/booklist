@@ -28,10 +28,10 @@ const BookAuthor = styled.div`
 
 const BookDetails = (props) => {
   const { book } = props;
-  const { removeBook } = useContext(BookContext);
+  const { dispatch } = useContext(BookContext);
 
   return (
-    <BookInfo onClick={() => removeBook(book.id)}>
+    <BookInfo onClick={() => dispatch({ type: "REMOVE_BOOK", id: book.id })}>
       <BookTitle>{book.title}</BookTitle>
       <BookAuthor>{book.author}</BookAuthor>
     </BookInfo>
