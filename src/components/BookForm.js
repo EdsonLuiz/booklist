@@ -9,6 +9,7 @@ const Form = styled.form`
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    box-shadow: none;
     margin: 6px 0;
     background-color: #3c1f3c;
     color: #fff;
