@@ -1,4 +1,8 @@
-# Booklist
+# [BookList](https://determined-ride-712758.netlify.app/)
+
+<p align="center">
+  <img src="md_assets/image.png"  alt="Imagem do projeto" />
+</p>
 
 ## Objetivo
 
@@ -14,6 +18,13 @@ Permitir o gerenciamento de livros para leitura.
   - CRA (Create React App)
 - Styled Components
 - Context API
+- localStorage
 - Hooks
   - useState
+  - useReducer
+  - useEffect
   - useContext
+
+## Resultado
+
+Você pode acessar o projeto através deste [LINK.](https://determined-ride-712758.netlify.app/)
