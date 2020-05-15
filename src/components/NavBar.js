@@ -12,7 +12,10 @@ const Container = styled.nav`
   }
 `;
 
-const Emoji = styled.span`
+const Emoji = styled.span.attrs({
+  role:"img",
+  ariaLabel:"Sad"
+})`
   font-size: 60px;
   vertical-align: middle;
   line-height: 2;
@@ -27,7 +30,7 @@ const NavBar = () => {
       {books.length > 0 ? (
         <p>You have {books.length} books</p>
       ) : (
-        <Emoji role="img" aria-label="sheep">
+        <Emoji>
           😕
         </Emoji>
       )}
